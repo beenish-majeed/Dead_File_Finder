@@ -33,6 +33,6 @@ bool UploadFolder::upl_path() {
 }
 
 string UploadFolder::get_path() {
-
+    
     return folder_path;
 }

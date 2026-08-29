@@ -3,13 +3,11 @@
 #include <filesystem>
 
 using namespace std;
-
 namespace fs = std::filesystem;
 
 void Scanner::set_path(string path) {
 
     folder_path = path;
-
 }
 
 void Scanner::scan_folder() {
@@ -28,14 +26,12 @@ void Scanner::scan_folder() {
 
             cout << "FILE: " << entry.path().filename() << '\n';
             fileCount++;
-
         }
 
         else if (entry.is_directory()) {
 
             cout << "FOLDER: " << entry.path().filename() << '\n';
             folderCount++;
-
         }
 
     }
