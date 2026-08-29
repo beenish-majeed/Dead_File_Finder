@@ -14,11 +14,9 @@
 
 ## About
 
-> *Inspect your files before deciding what stays.*
+*A C++ utility for scanning, analyzing, and cleaning files inside a selected folder.*
 
-Dead File Finder is a C++ command-line utility that lets users select a folder and inspect the files stored inside it.
-
-The program analyzes basic file information, identifies potential cleanup candidates, and allows the user to decide whether a selected file should be kept or deleted.
+Dead File Finder lets users select a folder, inspect the files inside it, analyze their basic properties, and decide which files should be kept or deleted.
 
 <br><br>
 
@@ -26,28 +24,14 @@ The program analyzes basic file information, identifies potential cleanup candid
 
 ## Features
 
-> *From folder selection to file cleanup, all through the command line.*
-
-* **Folder Selection**
-  Enter any folder path from your computer and check whether it exists.
-
-* **File Scanning**
-  Scan the selected folder and display the files and folders inside it.
-
-* **File Information**
-  Display the file name, extension, size, and word count.
-
-* **File Analysis**
-  Analyze basic file properties and classify files as empty, large, or normal.
-
-* **Cleanup Candidates**
-  Identify files that may be worth reviewing based on their properties.
-
-* **File Deletion**
-  Select a file and permanently remove it from the selected folder.
-
-* **Error Handling**
-  Handle invalid paths and filesystem errors without unexpectedly crashing the program.
+* Select and validate any folder path from the computer
+* Scan files and folders inside the selected location
+* Display file name, extension, size, and word count
+* Analyze files based on their basic properties
+* Categorize files as empty, large, or normal
+* Identify potential files worth reviewing
+* Permanently delete a selected file
+* Handle invalid paths and filesystem errors
 
 <br><br>
 
@@ -55,7 +39,7 @@ The program analyzes basic file information, identifies potential cleanup candid
 
 ## Built With
 
-> *Built from the ground up with core C++ concepts.*
+*C++ and Object-Oriented Programming applied to a practical file-system utility.*
 
 <div align="center">
 
@@ -69,9 +53,9 @@ The program analyzes basic file information, identifies potential cleanup candid
 
 ## Run Locally
 
-> *Compile the source and run the utility directly from your terminal.*
+*Compile the project and run the utility directly from the terminal.*
 
-**Clone**
+**Clone the repository**
 
 ```bash
 git clone <your-repository-url>
@@ -94,6 +78,16 @@ g++ -g src/main.cpp src/File.cpp src/Folder.cpp src/Scanner.cpp src/Analyzer.cpp
 
 ---
 
+## What's Next
+
+*Future updates will focus on making file analysis more useful while keeping the tool simple and practical.*
+
+<br><br>
+
+---
+
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=14&duration=2800&pause=1300&color=D4D4D4&center=true&vCenter=true&width=600&lines=Find+what+you+no+longer+need." alt="Closing animation"/>
+
+</div>
