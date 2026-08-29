@@ -3,10 +3,17 @@
 
 #include <string>
 
+using namespace std;
+
 class UploadFolder {
-    std::string folder_path;
+
+    string folder_path;
+
 public:
-    void upl_path();
+
+    bool upl_path();
+    string get_path();
+
 };
 
 #endif

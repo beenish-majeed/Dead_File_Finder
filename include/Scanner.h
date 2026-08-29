@@ -3,14 +3,15 @@
 
 #include <string>
 
+using namespace std;
+
 class Scanner {
 
-    std::string folder_path;
+    string folder_path;
 
 public:
-
+    void set_path(string path);
     void scan_folder();
-
 };
 
 #endif

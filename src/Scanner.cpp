@@ -6,14 +6,21 @@ using namespace std;
 
 namespace fs = std::filesystem;
 
-void Scanner::scan_folder() {
+void Scanner::set_path(string path) {
 
-    cout << "\nFiles:\n";
+    folder_path = path;
+
+}
+
+void Scanner::scan_folder() {
 
     fs::path folderPath = folder_path;
 
     int fileCount = 0;
     int folderCount = 0;
+
+    cout << "\nScanning...";
+    cout << "\n----------------------------------\n";
 
     for (const auto& entry : fs::directory_iterator(folderPath)) {
 
@@ -23,16 +30,19 @@ void Scanner::scan_folder() {
             fileCount++;
 
         }
+
         else if (entry.is_directory()) {
 
             cout << "FOLDER: " << entry.path().filename() << '\n';
             folderCount++;
 
         }
+
     }
 
     cout << "\n----------------------------------";
     cout << "\nTotal Files: " << fileCount;
     cout << "\nTotal Folders: " << folderCount;
     cout << "\n----------------------------------\n";
+
 }

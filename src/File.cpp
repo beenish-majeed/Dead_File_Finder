@@ -6,7 +6,7 @@ using namespace std;
 
 namespace fs = std::filesystem;
 
-void UploadFolder::upl_path() {
+bool UploadFolder::upl_path() {
 
     cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
     cout << "\n         DEAD FILE FINDER        ";
@@ -20,14 +20,19 @@ void UploadFolder::upl_path() {
     if (fs::exists(folderPath) && fs::is_directory(folderPath)) {
 
         cout << "\nFolder found.\n";
-        cout << "\nScanning...";
-        cout << "\n----------------------------------\n";
 
+        return true;
     }
     else {
 
-        cout << "\nSorry, folder does not exist!";
+        cout << "\nSorry, your folder does not exist!";
         cout << "\nPlease try again.\n";
 
+        return false;
     }
+}
+
+string UploadFolder::get_path() {
+
+    return folder_path;
 }

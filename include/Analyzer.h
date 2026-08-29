@@ -1,14 +1,14 @@
 #ifndef ANALYZER_H
 #define ANALYZER_H
 
-#include "File.h"
-#include "Finding.h"
+#include <string>
+using namespace std;
 
 class Analyzer {
-
 public:
-
-    void analyze(File file);
+    int choice;      
+    int deleteChoice;
+    void analyze(string folder_path);
 
 };
 
