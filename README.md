@@ -37,13 +37,65 @@ Dead File Finder lets users select a folder, inspect the files inside it, analyz
 
 ---
 
+## How It Works
+
+```mermaid
+flowchart LR
+
+    A["<b>📁 SELECT FOLDER</b><br/><br/>Choose folder"]
+
+    B["<b>🔍 SCAN FILES</b><br/><br/>Find all files"]
+
+    C["<b>⚙️ ANALYZE</b><br/><br/>Read file info"]
+
+    D["<b>📋 DISPLAY INFO</b><br/><br/>Name · Extension · Size"]
+
+    D2["<b>🚩 FLAG FILES</b><br/><br/>Show unnecessary files"]
+
+    E{"<b>NEXT ACTION?</b>"}
+
+    F["<b>👁️ REVIEW FILE</b><br/><br/>View details"]
+
+    G["<b>🗑️ DELETE FILE</b><br/><br/>Remove permanently"]
+
+    H["<b>🚪 EXIT TOOL</b><br/><br/>Close program"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> D2
+    D2 --> E
+
+    E -->|Review| F
+    E -->|Delete| G
+    E -->|Exit| H
+
+    classDef input fill:#0a1128,stroke:#3b82f6,color:#ffffff,stroke-width:2.5px;
+    classDef process fill:#12121a,stroke:#8b5cf6,color:#ffffff,stroke-width:2.5px;
+    classDef analysis fill:#0a1a14,stroke:#10b981,color:#ffffff,stroke-width:2.5px;
+    classDef decision fill:#1f1508,stroke:#d97706,color:#ffffff,stroke-width:2.5px;
+    classDef output fill:#1a0e14,stroke:#e11d48,color:#ffffff,stroke-width:2.5px;
+
+    linkStyle default stroke:#525252,stroke-width:1.5px;
+
+    class A input;
+    class B,C process;
+    class D,D2 analysis;
+    class E decision;
+    class F,G,H output;
+```
+
+<br><br>
+
+---
+
 ## Built With
 
 *C++ and Object-Oriented Programming applied to a practical file-system utility.*
 
 <div align="center">
 
-`C++`    `Object-Oriented Programming`    `Filesystem & File Handling`
+`C++`    `Object-Oriented Programming`    `Filesystem & File Handling`
 
 </div>
 
