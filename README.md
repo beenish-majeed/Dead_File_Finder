@@ -40,6 +40,7 @@ Dead File Finder lets users select a folder, inspect the files inside it, analyz
 ## How It Works
 
 ```mermaid
+%%{init: {"flowchart": {"nodeSpacing": 100, "rankSpacing": 150, "curve": "basis", "padding": 25, "useMaxWidth": false}, "themeVariables": {"fontSize": "30px", "fontFamily": "JetBrains Mono, monospace"}}}%%
 flowchart LR
 
     A["<b>📁 SELECT FOLDER</b><br/><br/>Choose folder"]
@@ -70,13 +71,13 @@ flowchart LR
     E -->|Delete| G
     E -->|Exit| H
 
-    classDef input fill:#0a1128,stroke:#3b82f6,color:#ffffff,stroke-width:2.5px;
-    classDef process fill:#12121a,stroke:#8b5cf6,color:#ffffff,stroke-width:2.5px;
-    classDef analysis fill:#0a1a14,stroke:#10b981,color:#ffffff,stroke-width:2.5px;
-    classDef decision fill:#1f1508,stroke:#d97706,color:#ffffff,stroke-width:2.5px;
-    classDef output fill:#1a0e14,stroke:#e11d48,color:#ffffff,stroke-width:2.5px;
+    classDef input fill:#0a1128,stroke:#3b82f6,color:#ffffff,stroke-width:4px;
+    classDef process fill:#12121a,stroke:#8b5cf6,color:#ffffff,stroke-width:4px;
+    classDef analysis fill:#0a1a14,stroke:#10b981,color:#ffffff,stroke-width:4px;
+    classDef decision fill:#1f1508,stroke:#d97706,color:#ffffff,stroke-width:4px;
+    classDef output fill:#1a0e14,stroke:#e11d48,color:#ffffff,stroke-width:4px;
 
-    linkStyle default stroke:#525252,stroke-width:1.5px;
+    linkStyle default stroke:#8a8a8a,stroke-width:3px;
 
     class A input;
     class B,C process;
