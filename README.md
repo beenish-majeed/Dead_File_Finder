@@ -39,9 +39,9 @@ Dead File Finder lets users select a folder, inspect the files inside it, analyz
 
 ## How It Works
 
-Getting your files organized takes just a few automatic steps. You start by choosing the folder you want to scanned, and the tool takes it from there. It finds every file inside that folder, reads each one for its name, extension, and size, and displays that information clearly for every file.
+Just point the tool at a folder and it takes care of the rest. It scans every file inside, reads its name, extension, and size, and flags anything unnecessary along the way.
 
-Along the way, any unnecessary or unused files are flagged so they stand out from the rest. From there, the choice is yours. You can review a flagged file to see its full details, delete it permanently, or exit the tool whenever you're ready.
+From there, you're in control. Review any flagged file for full details, delete it permanently, or exit whenever you're done.
 
 <br><br>
 
