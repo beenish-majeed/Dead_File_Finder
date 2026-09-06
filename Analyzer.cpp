@@ -11,8 +11,7 @@ void Analyzer::analyze(string folder_path) {
 
     fs::path folderPath = folder_path;
 
-    cout << "\n";
-    cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+    cout << "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
     cout << "\n        FILE ANALYSIS";
     cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 
@@ -46,8 +45,7 @@ void Analyzer::analyze(string folder_path) {
 
         cout << "\nFile: " << fileName;
 
-        cout << "\nExtension: "
-             << (extension.empty() ? "No extension" : extension);
+        cout << "\nExtension: " << (extension.empty() ? "No extension" : extension);
 
         cout << "\nSize: " << fileSize << " bytes";
 
