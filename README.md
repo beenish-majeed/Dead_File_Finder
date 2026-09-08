@@ -25,23 +25,21 @@ Dead File Finder lets users select a folder, inspect the files inside it, analyz
 ## Features
 
 * Select and validate any folder path from the computer
-* Scan files and folders inside the selected location
+* Scan files inside the selected location
 * Display file name, extension, size, and word count
-* Analyze files based on their basic properties
-* Categorize files as empty, large, or normal
-* Identify potential files worth reviewing
+* Detect empty files
+* Identify files not modified for 6 months or more
+* Review potential dead files before taking action
 * Permanently delete a selected file
 * Handle invalid paths and filesystem errors
 
 <br><br>
 
----
-
 ## How It Works
 
-Just point the tool at a folder and it takes care of the rest. It scans every file inside, reads its name, extension, and size, and flags anything unnecessary along the way.
+Point the tool to a folder and let it analyze the files. It checks their basic properties and identifies empty or outdated files that may be worth reviewing.
 
-From there, you're in control. Review any flagged file for full details, delete it permanently, or exit whenever you're done.
+You stay in control — review the flagged file, check its details, permanently delete it, or exit whenever you're done.
 
 <br><br>
 
