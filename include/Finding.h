@@ -2,7 +2,6 @@
 #define FINDING_H
 
 #include <string>
-
 using namespace std;
 
 class Finding {
@@ -13,9 +12,7 @@ class Finding {
 public:
 
     Finding(string name, string reason);
-
     void show_finding();
-
 };
 
 #endif
